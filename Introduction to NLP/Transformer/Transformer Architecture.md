@@ -32,6 +32,8 @@ where:
 - pos is the position of the word in the sequence,
 - i is the dimension index ($2i$ means the even dimension index, $2i+i$ means the odd dimension index), and
 - d is the dimensionality of the positional encoding and embeddings.
+![](https://machinelearningmastery.com/wp-content/uploads/2022/01/PE3.png)
+
 ## Input Representation
 The word embedding vector for each word and its corresponding positional encoding vector are added element-wise to create a new representation that includes both the semantic content of the word and information about its position in the sequence.
 $$Input Representation(w,pos)=Word Embedding(w)+Positional Encoding(pos)$$
@@ -112,7 +114,8 @@ One detail in the architecture of the encoder that we need to mention before mov
 "Add"(matrix X + matrix Z) in the picture refers to "Residual connections" can be used to mitigate the vanishing gradient problem. Normalization is to Normalize the numbers according to a normal distribution. Layer-normalization contributes to the stability of the training process.
 
 ## Feed Forward Layer
-If $X$ is the input to the feedforward layer, the feedforward function can be simply represented as:$$FFN(X)=ReLU(XW_1+b_1)W_2+b_2F$$​The feedforward function allows the model to capture complex, non-linear relationships in the data and helps in learning and representing abstract features. It plays a critical role in the overall effectiveness of the Transformer architecture.
+If $X$ is the input to the feedforward layer, the feedforward function can be simply represented as:
+$$FFN(X)=ReLU(XW_1+b_1)W_2+b_2$$​The feedforward function allows the model to capture complex, non-linear relationships in the data and helps in learning and representing abstract features. It plays a critical role in the overall effectiveness of the Transformer architecture.
 # Decoder Block
 ![](https://github.com/prnszz/Introduction-to-nlp/blob/main/Introduction%20to%20NLP/png/output%20block.png?raw=true)
 
@@ -168,7 +171,7 @@ The softmax layer then turns those scores into probabilities (all positive, all 
 
 ![](https://www.datocms-assets.com/96965/1684227303-2-transformers-explained.png)
 
-References:
+References:  
 https://jalammar.github.io/illustrated-transformer/  
 https://speech.ee.ntu.edu.tw/~hylee/ml/2021-spring.php
 

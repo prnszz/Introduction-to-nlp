@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0147f13a5c7db44f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Transformer/Questions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "70291c4816f96322",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Transformer/wenti.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -86,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Transformer/Transformer Architecture.md",
+                "file": "Transformer/wenti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Transformer/Transformer Architecture.md",
+                "file": "Transformer/wenti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Transformer/Transformer Architecture.md"
+                "file": "Transformer/wenti.md"
               }
             }
           }
@@ -147,8 +172,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8782220e1c072f0c",
+  "active": "70291c4816f96322",
   "lastOpenFiles": [
+    "Transformer/Transformer Architecture.md",
+    "Transformer/Questions.md",
+    "Transformer/wenti.md",
+    "word2vec/Definition.md",
+    "word2vec/wenti.md",
+    "Transformer/Basic definition_copy.md",
     "截屏2023-12-12 下午5.00.04.png",
     "截屏2023-12-12 下午4.52.36.png",
     "截屏2023-12-12 下午3.31.47.png",
@@ -158,14 +189,9 @@
     "截屏2023-12-12 下午2.17.42.png",
     "截屏2023-12-12 下午1.45.21.png",
     "截屏2023-12-12 下午1.14.06.png.md",
-    "Transformer/Transformer Architecture.md",
     "architecture .png",
     "output block.png",
-    "截屏2023-12-12 下午1.17.14.png",
-    "Transformer/Questions.md",
-    "word2vec/Definition.md",
     "Attetion/未命名.md",
-    "Transformer/Basic definition_copy.md",
     "BERT/Questions.md",
     "transformer.md",
     "trnasformer.png.md",
