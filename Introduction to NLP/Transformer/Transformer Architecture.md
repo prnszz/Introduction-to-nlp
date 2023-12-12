@@ -1,5 +1,5 @@
 # Transformer
-![[architecture .png]]
+![](https://github.com/prnszz/Introduction-to-nlp/blob/main/Introduction%20to%20NLP/png/architecture%20.png?raw=true)
 
 The Transformer is a type of neural network architecture introduced in the paper "Attention is All You Need" by Vaswani et al. in 2017. The key innovation of the Transformer is the self-attention mechanism, which allows the model to weigh the importance of different words in a sequence when processing information.
 
@@ -114,7 +114,7 @@ One detail in the architecture of the encoder that we need to mention before mov
 ## Feed Forward Layer
 If $X$ is the input to the feedforward layer, the feedforward function can be simply represented as:$$FFN(X)=ReLU(XW_1+b_1)W_2+b_2F$$​The feedforward function allows the model to capture complex, non-linear relationships in the data and helps in learning and representing abstract features. It plays a critical role in the overall effectiveness of the Transformer architecture.
 # Decoder Block
-![[output block.png]]
+![](https://github.com/prnszz/Introduction-to-nlp/blob/main/Introduction%20to%20NLP/png/output%20block.png?raw=true)
 
 Components and construction of the decoder block:
 - Output Embedding
@@ -126,27 +126,27 @@ Components and construction of the decoder block:
 - The Final linear and Softmax Layer
 ## Output Embedding
 For each decoding step, the model uses the embeddings of the previously generated tokens in the target sequence as part of the input. These embeddings are often referred to as "output embeddings" because they represent the model's own previous outputs. (ignore the input from the encoder here)
-![[截屏2023-12-12 下午1.45.21.png]]
+![](https://github.com/prnszz/Introduction-to-nlp/blob/main/Introduction%20to%20NLP/png/截屏2023-12-12%20下午1.45.21.png?raw=true)
 ## Positional Encoding 
 Similar to the encoder, positional encoding is added to the output embeddings to provide information about the position of each token in the sequence.
 ## Self-Attention Layer (Masked Self-Attention)
 ### Why we should use "Mask"?
 The primary reason for using Masked Self-Attention is to prevent the model from looking ahead or attending to future tokens during the generation of a particular token in the output sequence.
 During autoregressive generation, the model generates tokens one at a time in a sequential manner. At each decoding step, the model predicts the next token based on the context of the previously generated tokens. It is essential to maintain a causal relationship between the generated tokens to ensure that the model only relies on information from positions that precede the current position in the sequence.
-![[截屏2023-12-12 下午2.17.42.png]]
+![](https://github.com/prnszz/Introduction-to-nlp/blob/main/Introduction%20to%20NLP/png/截屏2023-12-12%20下午2.17.42.png?raw=true)
 ### How to achieve "Mask"?
 Let's take a look of the following picture.
-![[截屏2023-12-12 下午3.18.46.png]]
+![](https://github.com/prnszz/Introduction-to-nlp/blob/main/Introduction%20to%20NLP/png/截屏2023-12-12%20下午3.18.46.png?raw=true)
 Grey embedding vectors are masked vectors ($x_3$, $x_4$). We can set attention score to those masked vectors to $-\infty$ (practically we just set them to for example -100000000). After applying the mask, we typically apply the $softmax$ operation to obtain the final attention weights. The $softmax$ ensures that the attention weights sum to 1 and attention weights to masked vectors should be 0.
 
 ### Intuition understanding on Matrix Calculation of Masked Self-attention
-![[截屏2023-12-12 下午3.31.47.png]]
+![](https://github.com/prnszz/Introduction-to-nlp/blob/main/Introduction%20to%20NLP/png/截屏2023-12-12%20下午3.31.47.png?raw=true)
 $W'$ is the matrix attention scores and after we apply $softmax$ on $W'$, we will get $W$ refers to matrix attention weights. 
 
 ## Encoder-Decoder Attention Layer
 Encoder-Decoder Attention mechanism, or so called Cross Attention, is an essential component in the decoder block. The encoder-decoder attention allows the decoder to focus on different parts of the input sequence (encoder's output) while generating the output sequence.
 Encoder-Decoder Attention Layer's query is derived from the output of the previous first-level decoder layer, while its key and value come from the output of the encoder. This enables each position in the decoder to attend to every position in the input sequence.
-![[截屏2023-12-12 下午4.52.36.png]]
+![](https://github.com/prnszz/Introduction-to-nlp/blob/main/Introduction%20to%20NLP/png/截屏2023-12-12%20下午4.52.36.png?raw=true)
 
 ## Add & Normalize Layer
 Add & Normalize Layers in a decoder block have similar roles with those layers in a encoder block.
@@ -169,5 +169,7 @@ The softmax layer then turns those scores into probabilities (all positive, all 
 ![](https://www.datocms-assets.com/96965/1684227303-2-transformers-explained.png)
 
 References:
-https://jalammar.github.io/illustrated-transformer/
+https://jalammar.github.io/illustrated-transformer/  
 https://speech.ee.ntu.edu.tw/~hylee/ml/2021-spring.php
+
+
