@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "ee58017ca94611b1",
+        "id": "483b5f7c972ae459",
         "type": "tabs",
         "children": [
           {
-            "id": "d1e7f7eb86b427f8",
+            "id": "8782220e1c072f0c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Transformer/Mechanism.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6ee7d10fac95fc84",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Transformer/Mechanism.md",
+                "file": "Transformer/Transformer Architecture.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.5
+    "width": 232.5,
+    "collapsed": true
   },
   "right": {
     "id": "1a7a52b183760726",
@@ -98,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Transformer/Mechanism.md",
+                "file": "Transformer/Transformer Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Transformer/Mechanism.md",
+                "file": "Transformer/Transformer Architecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Transformer/Mechanism.md"
+                "file": "Transformer/Transformer Architecture.md"
               }
             }
           }
@@ -159,17 +147,28 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6ee7d10fac95fc84",
+  "active": "8782220e1c072f0c",
   "lastOpenFiles": [
-    "Transformer/Basic definition_copy.md",
-    "Transformer/Mechanism.md",
-    "BERT/Questions.md",
+    "截屏2023-12-12 下午5.00.04.png",
+    "截屏2023-12-12 下午4.52.36.png",
+    "截屏2023-12-12 下午3.31.47.png",
+    "截屏2023-12-12 下午3.18.46.png",
+    "截屏2023-12-12 下午3.13.36.png",
+    "截屏2023-12-12 下午2.21.44.png",
+    "截屏2023-12-12 下午2.17.42.png",
+    "截屏2023-12-12 下午1.45.21.png",
+    "截屏2023-12-12 下午1.14.06.png.md",
+    "Transformer/Transformer Architecture.md",
+    "architecture .png",
+    "output block.png",
+    "截屏2023-12-12 下午1.17.14.png",
     "Transformer/Questions.md",
-    "Transformer/transformer.png",
+    "word2vec/Definition.md",
+    "Attetion/未命名.md",
+    "Transformer/Basic definition_copy.md",
+    "BERT/Questions.md",
     "transformer.md",
     "trnasformer.png.md",
-    "Attetion/未命名.md",
-    "word2vec/Definition.md",
     "word2vec/questions.md",
     "BERT",
     "Attetion",
