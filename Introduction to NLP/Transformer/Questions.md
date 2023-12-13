@@ -70,5 +70,5 @@ In the Transformer architecture, the feedforward neural network (FFN) is a compo
 $$FFN(X)=ReLU(XW_1+b_1)W_2+b_2$$
 # What is the interaction between the Encoder and Decode?
 - **Encoder-Decoder Attention Mechanism (Cross Attention):** This attention mechanism allows each position in the Decoder to attend to all positions in the Encoder, capturing relationships between the input and output sequences. In this attention mechanism, for each position in the Decoder, a weighted sum of the Encoder's outputs is calculated based on the similarity between the current position in the Decoder and each position in the Encoder.
-![](https://github.com/prnszz/Introduction-to-nlp/blob/main/Introduction%20to%20NLP/png/截屏2023-12-12%20下午4.52.36.png?raw=true)
+
 In summary, Cross Attention Mechanism gets $K$ and $V$ from Encoder and $Q$ from Decoder. 
