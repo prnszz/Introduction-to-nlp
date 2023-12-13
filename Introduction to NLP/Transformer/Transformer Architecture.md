@@ -160,6 +160,7 @@ Components and construction of the decoder block:
 
 ## Output Embedding
 For each decoding step, the model uses the embeddings of the previously generated tokens in the target sequence as part of the input. These embeddings are often referred to as "output embeddings" because they represent the model's own previous outputs (or called target). (ignore the input from the encoder here)
+
 ![](https://upload.cc/i1/2023/12/13/PqkV6b.png)
 
 
